@@ -1,0 +1,116 @@
+body {
+  background-image: linear-gradient(160deg, rgb(189, 120, 226), rgb(137, 175, 237));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.box {
+  background-color: rgb(252, 251, 249);
+  width: 370px;
+  height: 470px;
+  border-radius: 2%;
+}
+.date {
+  font-family: Helvetica, sans-serif;
+  font-style: italic;
+  color: rgb(157, 74, 252);
+  justify-self: center;
+}
+hr {
+  height: 1px;
+  border-width: 0;
+  background-color: gray;
+  opacity: 0.2;
+}
+.title {
+  margin-top: 30px;
+  color: rgb(40, 37, 37);
+  text-align: center;
+  font-family: Verdana;
+  font-size: larger;
+  opacity: 0.8;
+}
+.list {
+  margin-top: 40px;
+  margin-left: 80px;
+}
+label {
+  display: inline-block;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: smaller;
+  text-align: left;
+  width: 200px;
+  height: 37px;
+  font-weight: bold;
+  opacity: 0.65;
+}
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: rgb(252, 251, 249);
+  border: 1.6px solid grey;
+  opacity: 0.5;
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+  vertical-align: middle;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Checkbox checked state */
+input[type="checkbox"]:checked {
+  background-color: rgb(252, 251, 249); /* Green background when checked */
+  border: 1.6px solid grey;
+  opacity: 0.5;
+
+}
+
+/* Add a white checkmark using ::after */
+input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: -5px;
+  width: 5px;
+  height: 10px;
+  border: solid blue;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  transform-origin: bottom left;
+}
+
+.more {
+  font-family: Verdana;
+  text-align: center;
+  font-size: 80%;
+  color: gray;
+}
+
+.circle {
+  display: flex;
+  height: 63px;
+  width: 63px;
+  background-color: rgb(157, 74, 252);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.cross {
+  display: flex;
+  background: rgb(252, 251, 249);
+  height: 28px;
+  position: absolute;
+  width: 3.2px;
+}
+
+.cross2 {
+  display: flex;
+  background: rgb(252, 251, 249);
+  height: 3px;
+  position: absolute;
+  width: 28px;
+}
